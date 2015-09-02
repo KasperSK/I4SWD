@@ -4,15 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DD817B70-263A-4C2E-8B2B-7EC7196B4542}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{57F85E15-DBB7-482B-B619-ECED4EDCCB79}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Cardgame</RootNamespace>
-    <AssemblyName>Cardgame</AssemblyName>
+    <RootNamespace>AGameOfCards.Application</RootNamespace>
+    <AssemblyName>AGameOfCards.Application</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -40,18 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cardgame.cs" />
-    <Compile Include="Cards\BlueCard.cs" />
-    <Compile Include="Cards\GreenCard.cs" />
-    <Compile Include="Cards\ICard.cs" />
-    <Compile Include="Cards\RedCard.cs" />
-    <Compile Include="Cards\YellowCard.cs" />
-    <Compile Include="Deck\Deck.cs" />
-    <Compile Include="Player\IPlayer.cs" />
-    <Compile Include="Player\Player.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Cardgame\Cardgame.csproj">
+      <Project>{dd817b70-263a-4c2e-8b2b-7ec7196b4542}</Project>
+      <Name>Cardgame</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

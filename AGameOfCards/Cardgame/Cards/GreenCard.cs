@@ -13,8 +13,11 @@ namespace Cardgame.Cards
         {
             Value = val;
             _suit = 3;
+            Suit = "Green";
         }
         public int Value { get; set; }
+        public string Suit { get; private set; }
+
         public int CardValue()
         {
             return _suit*Value;

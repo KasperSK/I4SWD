@@ -10,6 +10,7 @@ namespace Cardgame.Cards
     {
 
         int Value { get; set; }
+        string Suit { get; }
         int CardValue();
     }
 }

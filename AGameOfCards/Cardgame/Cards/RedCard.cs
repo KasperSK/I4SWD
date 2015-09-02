@@ -9,8 +9,11 @@ namespace Cardgame.Cards
         {
             Value = val;
             _suit = 1;
+            Suit = "Red";
         }
         public int Value { get; set; }
+
+        public string Suit { get; private set; }
 
         public int CardValue()
         {

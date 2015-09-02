@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Cardgame.Cards;
 
 namespace Cardgame.Player
 {
@@ -11,7 +12,7 @@ namespace Cardgame.Player
         string Name { get; set; }
         void ShowTotalValue();
         void ShowHand();
-        void ReceiveCard();
+        void ReceiveCard(ICard card);
 
     }
 }
