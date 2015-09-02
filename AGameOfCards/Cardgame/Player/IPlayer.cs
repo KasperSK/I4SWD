@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Cardgame.Player
 {
-    interface IPlayer
+    public interface IPlayer
     {
+        string Name { get; set; }
+        void ShowTotalValue();
+        void ShowHand();
+        void ReceiveCard();
+
     }
 }

@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Cardgame.Cards
 {
-    class GreenCard : ICard
+    public class GreenCard : ICard
     {
         private readonly int _suit;
-        GreenCard(int val)
+        public GreenCard(int val)
         {
             Value = val;
             _suit = 3;

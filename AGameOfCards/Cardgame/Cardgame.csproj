@@ -46,6 +46,7 @@
     <Compile Include="Cards\ICard.cs" />
     <Compile Include="Cards\RedCard.cs" />
     <Compile Include="Cards\YellowCard.cs" />
+    <Compile Include="Deck\Deck.cs" />
     <Compile Include="Player\IPlayer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
