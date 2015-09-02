@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Cardgame.cs" />
     <Compile Include="Cards\BlueCard.cs" />
+    <Compile Include="Cards\GoldCard.cs" />
     <Compile Include="Cards\GreenCard.cs" />
     <Compile Include="Cards\ICard.cs" />
     <Compile Include="Cards\RedCard.cs" />
@@ -49,6 +50,7 @@
     <Compile Include="Deck\Deck.cs" />
     <Compile Include="Player\IPlayer.cs" />
     <Compile Include="Player\Player.cs" />
+    <Compile Include="Player\WeakPlayer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

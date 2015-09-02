@@ -10,7 +10,7 @@ namespace Cardgame.Player
     public interface IPlayer
     {
         string Name { get; set; }
-        void ShowTotalValue();
+        int ShowTotalValue();
         void ShowHand();
         void ReceiveCard(ICard card);
 

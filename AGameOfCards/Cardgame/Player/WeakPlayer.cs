@@ -7,24 +7,20 @@ using Cardgame.Cards;
 
 namespace Cardgame.Player
 {
-    class Player : IPlayer
+    public class WeakPlayer : IPlayer
     {
         private List<ICard> _hand;
-         
+
         public string Name { get; set; }
 
-        public Player(String name)
+        public WeakPlayer(String name)
         {
             _hand = new List<ICard>();
             Name = name;
         }
         public int ShowTotalValue()
         {
-            int TotalValue = 0;
-            foreach (var card in _hand)
-            {
-                TotalValue += card.CardValue();
-            }
+            int TotalValue = _hand.Sum(card => card.CardValue());
             Console.WriteLine("Player {0}'s hand has a total value of {1}", Name, TotalValue);
             return TotalValue;
         }
@@ -44,6 +40,10 @@ namespace Cardgame.Player
         public void ReceiveCard(ICard card)
         {
             _hand.Add(card);
+            if (_hand.Count() > 3)
+            {
+                _hand.RemoveAt(0);
+            }
         }
     }
 }

@@ -38,8 +38,9 @@ namespace Cardgame
                     AddPlayer(input);
                 }
             } while (input != "start");
+            _players.Add(new WeakPlayer("densvage"));
             _gameDeck = new Deck.Deck(8);
-
+            
             foreach (var person in _players)
             {
                 _gameDeck.DealToPlayer(person, 8);
@@ -51,10 +52,19 @@ namespace Cardgame
                 person.ShowHand();
             }
 
+            IPlayer winner = null;
+            int winValue = 0;
             foreach (var person in _players)
             {
-                person.ShowTotalValue();
+                var personValue = person.ShowTotalValue();
+                if (winValue < personValue)
+                {
+                    winner = person;
+                    winValue = personValue;
+                }
             }
+
+            Console.WriteLine("The winner is: {0} with a winning hand with the value of {1}", winner.Name, winValue);
         }
     }
 }
