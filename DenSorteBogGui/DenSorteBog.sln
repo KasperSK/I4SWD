@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DenSorteBog", "DenSorteBog\DenSorteBog.csproj", "{78EC9B79-9502-45B9-9556-2161BECA6D6B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DenSorteBogGui", "DenSorteBog\DenSorteBogGui.csproj", "{78EC9B79-9502-45B9-9556-2161BECA6D6B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DenSorteBogDal", "DenSorteBogDal\DenSorteBogDal.csproj", "{B2C66F21-9F35-4524-9303-EF9E21383816}"
 EndProject
