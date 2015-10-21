@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoF-Template-Strategy", "GoF-Template-Strategy\GoF-Template-Strategy.csproj", "{F07A4D23-24AC-4F64-959F-176AB5E7A562}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sorter.Application", "Sorter.Application\Sorter.Application.csproj", "{2BFCEE2B-02C0-4229-A320-2F82C8B6DC89}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F07A4D23-24AC-4F64-959F-176AB5E7A562}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F07A4D23-24AC-4F64-959F-176AB5E7A562}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F07A4D23-24AC-4F64-959F-176AB5E7A562}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F07A4D23-24AC-4F64-959F-176AB5E7A562}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BFCEE2B-02C0-4229-A320-2F82C8B6DC89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BFCEE2B-02C0-4229-A320-2F82C8B6DC89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BFCEE2B-02C0-4229-A320-2F82C8B6DC89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BFCEE2B-02C0-4229-A320-2F82C8B6DC89}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
