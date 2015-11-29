@@ -22,7 +22,7 @@ namespace VisitorImplementation
 
     public class Employees : IVisitable
     {
-        private List<Employee> _employeesList = new List<Employee>();
+        private readonly List<IVisitable> _employeesList = new List<IVisitable>();
 
         public Employees()
         {
@@ -33,7 +33,7 @@ namespace VisitorImplementation
             _employeesList.Add(e);
         }
 
-        public void Accept(IVisitor visitor)
+        public virtual void Accept(IVisitor visitor)
         {
             foreach (var employee in _employeesList)
             {
@@ -44,10 +44,10 @@ namespace VisitorImplementation
 
     public class Employee : IVisitable
     {
-        public string Name { get; set; }
-        public double Salary { get; set; }
-        public int VacationDays { get; set; }
-        public int SickDays { get; set; }
+        public string Name { get; private set; }
+        public double Salary { get; private set; }
+        public int VacationDays { get; private set; }
+        public int SickDays { get; private set; }
 
         public Employee(string name, double salary, int vacationDays, int sickDays)
         {
@@ -57,7 +57,7 @@ namespace VisitorImplementation
             SickDays = sickDays;
         }
 
-        public void Accept(IVisitor visitor)
+        public virtual void Accept(IVisitor visitor)
         {
             Console.WriteLine("Base Accept");
             visitor.Visit(this);
@@ -70,7 +70,7 @@ namespace VisitorImplementation
         {
         }
 
-        public new void Accept(IVisitor visitor)
+        public override void Accept(IVisitor visitor)
         {
             Console.WriteLine("Derived Accept");
             visitor.Visit(this);    
