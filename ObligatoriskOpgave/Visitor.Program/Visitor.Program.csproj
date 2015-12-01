@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Visitor.Program</RootNamespace>
     <AssemblyName>Visitor.Program</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -49,6 +50,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\VisitorAsset\VisitorAsset.csproj">
+      <Project>{1fa56973-1966-4b67-8ef1-6900c8bf1411}</Project>
+      <Name>VisitorAsset</Name>
+    </ProjectReference>
     <ProjectReference Include="..\VisitorImplementation\VisitorImplementation.csproj">
       <Project>{c1b1b1ec-ce80-4053-bb73-877c422109da}</Project>
       <Name>VisitorImplementation</Name>
